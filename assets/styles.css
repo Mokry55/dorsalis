@@ -1,0 +1,397 @@
+:root {
+  --primary: #0EA5A4;
+  --primaryHover: #0B7F7E;
+  --text: #0F172A;
+  --muted: #475569;
+  --bg: #F8FAFC;
+  --card: #FFFFFF;
+  --border: #E2E8F0;
+  --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+img,
+iframe {
+  max-width: 100%;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+.container {
+  width: min(1120px, 92vw);
+  margin: 0 auto;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  z-index: 1000;
+  background: var(--card);
+  border: 2px solid var(--primary);
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.5rem;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  background: rgba(248, 250, 252, 0.95);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(8px);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 72px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+.logo small {
+  font-weight: 500;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.menu-toggle {
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: 0.6rem;
+  padding: 0.45rem 0.7rem;
+  font-weight: 600;
+}
+
+.main-nav {
+  display: none;
+  position: absolute;
+  top: 72px;
+  right: 4vw;
+  left: 4vw;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  padding: 0.6rem;
+}
+
+.main-nav.open {
+  display: block;
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.main-nav a {
+  display: block;
+  padding: 0.7rem;
+  border-radius: 0.45rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+  background: rgba(14, 165, 164, 0.1);
+  text-decoration: none;
+}
+
+.hero {
+  padding: 2.5rem 0 2rem;
+}
+
+.hero-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.hero-copy h1 {
+  font-size: clamp(1.75rem, 5vw, 2.8rem);
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+.hero-copy p {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  max-width: 62ch;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.badge {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.2rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.82rem 1rem;
+  border-radius: 0.65rem;
+  border: 1px solid transparent;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background: var(--primaryHover);
+  text-decoration: none;
+}
+
+.btn-secondary {
+  border-color: var(--primary);
+  background: #fff;
+  color: var(--primary);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
+  background: rgba(14, 165, 164, 0.12);
+  text-decoration: none;
+}
+
+.hero-card,
+.card,
+.faq details,
+.contact-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.hero-card {
+  padding: 1.2rem;
+}
+
+.section {
+  padding: 2.1rem 0;
+}
+
+.section h2 {
+  font-size: clamp(1.3rem, 3.3vw, 2rem);
+  margin: 0 0 0.9rem;
+}
+
+.section-intro {
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.grid.cards-3 {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.grid.cards-2 {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  padding: 1rem;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.faq {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.faq details {
+  padding: 0.9rem;
+}
+
+.faq summary {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.contact-layout {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-card {
+  padding: 1rem;
+}
+
+.contact-card h3 {
+  margin-top: 0;
+}
+
+.map-embed {
+  border: 0;
+  width: 100%;
+  min-height: 310px;
+  border-radius: 1rem;
+}
+
+.site-footer {
+  margin-top: 2rem;
+  border-top: 1px solid var(--border);
+  background: #fff;
+  padding: 1.25rem 0 6rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.footer-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.sticky-cta {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 95;
+  background: rgba(255, 255, 255, 0.97);
+  border-top: 1px solid var(--border);
+  padding: 0.6rem;
+}
+
+.sticky-cta .container {
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .main-nav {
+    position: static;
+    display: block;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    background: transparent;
+  }
+
+  .main-nav ul {
+    flex-direction: row;
+    gap: 0.35rem;
+  }
+
+  .hero {
+    padding-top: 3.3rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1.25fr 0.85fr;
+    align-items: center;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr 1.1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+
+  .site-footer {
+    padding-bottom: 1.4rem;
+  }
+
+  .sticky-cta {
+    display: none;
+  }
+}

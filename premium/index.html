@@ -61,7 +61,9 @@
           </span>
         </a>
 
-        <nav class="main-nav" aria-label="Główna nawigacja">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Otwórz menu">Menu</button>
+
+        <nav class="main-nav" id="main-nav" aria-label="Główna nawigacja">
           <a href="#o-nas">O nas</a>
           <a href="#oferta">Oferta</a>
           <a href="#zespol">Zespół</a>
@@ -328,6 +330,36 @@
       </section>
 
       <section class="section" id="zespol">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Zespół</p>
+            <h2>Doświadczeni fizjoterapeuci i rehabilitanci</h2>
+          </header>
+
+          <div class="team-grid">
+            <article class="team-card">
+              <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&q=80" alt="Fizjoterapeutka - portret" />
+              <!-- TODO: pobrać i wrzucić do /assets/img/ na final -->
+              <h3>Anna Kowalska (demo)</h3>
+              <p>Fizjoterapia ortopedyczna i terapia manualna.</p>
+            </article>
+            <article class="team-card">
+              <img src="https://images.unsplash.com/photo-1614608682850-e0d6ed316d47?auto=format&fit=crop&w=500&q=80" alt="Fizjoterapeuta - portret" />
+              <!-- TODO: pobrać i wrzucić do /assets/img/ na final -->
+              <h3>Michał Nowak (demo)</h3>
+              <p>Rehabilitacja sportowa i przygotowanie motoryczne.</p>
+            </article>
+            <article class="team-card">
+              <img src="https://images.unsplash.com/photo-1594824475317-8f3f4ec86163?auto=format&fit=crop&w=500&q=80" alt="Rehabilitantka - portret" />
+              <!-- TODO: pobrać i wrzucić do /assets/img/ na final -->
+              <h3>Katarzyna Wiśniewska (demo)</h3>
+              <p>Fizykoterapia, kinezyterapia i edukacja pacjenta.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="o-klinice">
         <div class="container clinic-grid">
           <div>
             <p class="eyebrow">O klinice / gabinet</p>

@@ -34,8 +34,7 @@
         "email": "kontakt@dorsalis.pl",
         "url": "https://TODO-domena.pl/",
         "areaServed": "Ząbki",
-        "medicalSpecialty": ["PhysicalTherapy", "SportsMedicine"],
-        "openingHoursSpecification": "TODO: uzupełnić po potwierdzeniu godzin otwarcia"
+        "medicalSpecialty": ["PhysicalTherapy", "SportsMedicine"]
       }
     </script>
   </head>
@@ -44,7 +43,7 @@
 
     <header class="site-header" id="top">
       <div class="container header-inner">
-        <a class="brand" href="#top" aria-label="DORSALIS - strona główna premium demo">
+        <a class="brand" href="#top" aria-label="DORSALIS - strona główna">
           <span class="brand-mark">D</span>
           <span>
             <strong>DORSALIS</strong>
@@ -57,25 +56,14 @@
         </button>
 
         <nav class="main-nav" id="primary-menu" aria-label="Główna nawigacja">
-          <a href="#o-nas">O nas</a>
-          <a href="#oferta">Oferta</a>
-          <a href="#zespol">Zespół</a>
-          <a href="#opinie">Opinie</a>
-          <a href="#dojazd">Dojazd</a>
-          <a href="#kontakt">Kontakt</a>
-          <a class="btn btn-primary" href="tel:+48501659562">Zadzwoń</a>
-        </nav>
-      </div>
-
-      <div class="anchor-bar" aria-label="Szybkie sekcje">
-        <div class="container anchor-track">
+          <a href="#top">Start</a>
           <a href="#oferta">Oferta</a>
           <a href="#specjalizacje">Specjalizacje</a>
           <a href="#pierwsza-wizyta">Pierwsza wizyta</a>
-          <a href="#opinie">Opinie</a>
-          <a href="#dojazd">Dojazd</a>
+          <a href="#klinika">O klinice</a>
           <a href="#kontakt">Kontakt</a>
-        </div>
+          <a class="btn btn-primary" href="tel:+48501659562">Zadzwoń</a>
+        </nav>
       </div>
     </header>
 
@@ -115,10 +103,9 @@
             <h2>Dobieramy terapię do Twoich potrzeb</h2>
           </div>
 
-          <div class="tile-grid">
+          <div class="tile-grid tile-grid--photos">
             <article class="tile-card">
               <!-- TODO: pobrać i wrzucić do /assets/img/tile-ortopedia.webp na final -->
-              <!-- alternatywa lokalna: /assets/img/tile-ortopedia.webp -->
               <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=80" alt="Rehabilitacja ortopedyczna" loading="lazy" />
               <div>
                 <h3>Rehabilitacja ortopedyczna</h3>
@@ -144,38 +131,32 @@
                 <a href="#oferta">Zobacz więcej</a>
               </div>
             </article>
-            <article class="tile-card">
-              <!-- TODO: pobrać i wrzucić do /assets/img/tile-fizykoterapia.webp na final -->
-              <img src="https://images.unsplash.com/photo-1477332552946-cfb384aeaf1c?auto=format&fit=crop&w=900&q=80" alt="Fizykoterapia" loading="lazy" />
-              <div>
-                <h3>Fizykoterapia</h3>
-                <p>Zabiegi wspomagające regenerację tkanek i redukcję bólu.</p>
-                <a href="#oferta">Zobacz więcej</a>
-              </div>
+          </div>
+
+          <div class="icon-card-grid">
+            <article class="icon-card">
+              <div class="icon-wrap" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2v2.1a7 7 0 0 1 5.9 5.9H21v2h-2.1a7 7 0 0 1-5.9 5.9V20h-2v-2.1A7 7 0 0 1 5.1 12H3v-2h2.1A7 7 0 0 1 11 4.1V2h2Zm-1 4a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z"/></svg></div>
+              <h3>Fizykoterapia</h3>
+              <p>Zabiegi wspierające regenerację tkanek i redukcję bólu.</p>
+              <a href="#oferta">Zobacz więcej</a>
             </article>
-            <article class="tile-card">
-              <!-- TODO: pobrać i wrzucić do /assets/img/tile-masaz.webp na final -->
-              <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=80" alt="Masaż leczniczy" loading="lazy" />
-              <div>
-                <h3>Masaż leczniczy</h3>
-                <p>Rozluźnienie napięć mięśniowych i poprawa komfortu ruchu.</p>
-                <a href="#oferta">Zobacz więcej</a>
-              </div>
+            <article class="icon-card">
+              <div class="icon-wrap" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h10a2 2 0 0 1 2 2v6c0 4.4-3.6 8-8 8s-8-3.6-8-8V5a2 2 0 0 1 2-2Zm0 2v6a6 6 0 0 0 12 0V5H7Zm4 15h2v2h-2v-2Z"/></svg></div>
+              <h3>Masaż leczniczy</h3>
+              <p>Rozluźnienie napięć mięśniowych i poprawa komfortu ruchu.</p>
+              <a href="#oferta">Zobacz więcej</a>
             </article>
-            <article class="tile-card">
-              <!-- TODO: pobrać i wrzucić do /assets/img/tile-mckenzie.webp na final -->
-              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=900&q=80" alt="Metoda McKenziego" loading="lazy" />
-              <div>
-                <h3>Metoda McKenziego</h3>
-                <p>Postępowanie diagnostyczno-terapeutyczne przy bólach kręgosłupa i kończyn.</p>
-                <a href="#oferta">Zobacz więcej</a>
-              </div>
+            <article class="icon-card">
+              <div class="icon-wrap" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2c3.9 0 7 3.1 7 7 0 5.2-7 13-7 13S5 14.2 5 9c0-3.9 3.1-7 7-7Zm0 2a5 5 0 0 0-5 5c0 3.2 3.4 8.3 5 10.4 1.6-2.1 5-7.2 5-10.4a5 5 0 0 0-5-5Zm0 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4Z"/></svg></div>
+              <h3>Metoda McKenziego</h3>
+              <p>Postępowanie diagnostyczno-terapeutyczne przy bólach kręgosłupa i kończyn.</p>
+              <a href="#oferta">Zobacz więcej</a>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section-soft" id="pierwsza-wizyta">
+      <section class="section section-soft has-visual" id="pierwsza-wizyta">
         <div class="container highlight-grid">
           <div>
             <p class="eyebrow">Pierwsza wizyta i plan terapii</p>
@@ -192,13 +173,8 @@
             </ul>
             <a class="btn btn-primary" href="tel:+48501659562">Zadzwoń i umów wizytę</a>
           </div>
-          <figure class="highlight-photo">
-            <!-- TODO: pobrać i wrzucić do /assets/img/pierwsza-wizyta.webp na final -->
-            <img
-              src="https://images.unsplash.com/photo-1597764699510-894ddf3d2f48?auto=format&fit=crop&w=1000&q=80"
-              alt="Fizjoterapeutka podczas konsultacji"
-              loading="lazy"
-            />
+          <figure class="highlight-visual" aria-label="Miejsce na zdjęcie kliniki">
+            <figcaption>Zdjęcie kliniki (do podmiany)</figcaption>
           </figure>
         </div>
       </section>
@@ -260,47 +236,15 @@
         </div>
       </section>
 
-      <section class="section section-soft" id="opinie">
+      <section class="section section-soft placeholder-section" id="opinie-google">
         <div class="container">
-          <div class="section-head">
-            <p class="eyebrow">Opinie</p>
-            <h2>Co mówią pacjenci o wizytach w DORSALIS</h2>
-            <p class="demo-note">Przykładowe opinie (demo)</p>
-          </div>
-
-          <div class="testimonial-slider" aria-live="polite">
-            <article class="testimonial active">
-              <!-- TODO: pobrać i wrzucić do /assets/img/opinia-1.webp na final -->
-              <img src="https://images.unsplash.com/photo-1542204625-de293a8e2281?auto=format&fit=crop&w=300&q=80" alt="Pacjentka demo" loading="lazy" />
-              <blockquote>
-                „Bardzo konkretna diagnostyka i jasny plan działania. Już po kilku spotkaniach odczułam wyraźną poprawę.”
-              </blockquote>
-              <p class="author">Pacjentka (demo)</p>
-            </article>
-            <article class="testimonial">
-              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=300&q=80" alt="Pacjent demo" loading="lazy" />
-              <blockquote>
-                „Doceniam indywidualne podejście i tłumaczenie każdego etapu terapii. Czułem się zaopiekowany od początku.”
-              </blockquote>
-              <p class="author">Pacjent (demo)</p>
-            </article>
-            <article class="testimonial">
-              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80" alt="Pacjentka demo" loading="lazy" />
-              <blockquote>
-                „Świetna atmosfera i profesjonalna opieka. Polecam osobom wracającym do aktywności po urazie.”
-              </blockquote>
-              <p class="author">Pacjentka aktywna (demo)</p>
-            </article>
-            <div class="slider-controls">
-              <button class="slider-btn" type="button" data-dir="prev" aria-label="Poprzednia opinia">←</button>
-              <button class="slider-btn" type="button" data-dir="next" aria-label="Następna opinia">→</button>
-            </div>
-          </div>
+          <h2>Opinie z Google (opcjonalnie)</h2>
+          <p>Możemy wstawić realne opinie po akceptacji dema.</p>
         </div>
       </section>
 
-      <section class="section" id="o-nas">
-        <div class="container about-grid" id="zespol">
+      <section class="section" id="klinika">
+        <div class="container clinic-grid">
           <div>
             <p class="eyebrow">O klinice / gabinet</p>
             <h2>Miejsce stworzone dla bezpiecznej i skutecznej terapii</h2>
@@ -311,13 +255,19 @@
             </p>
             <a class="btn btn-outline" href="#kontakt">Przejdź do kontaktu</a>
           </div>
-          <div class="gallery-grid">
-            <!-- TODO: pobrać i wrzucić do /assets/img/galeria-1.webp na final -->
-            <img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?auto=format&fit=crop&w=800&q=80" alt="Wnętrze gabinetu fizjoterapii" loading="lazy" />
-            <!-- TODO: pobrać i wrzucić do /assets/img/galeria-2.webp na final -->
-            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80" alt="Stanowisko ćwiczeń rehabilitacyjnych" loading="lazy" />
-            <!-- TODO: pobrać i wrzucić do /assets/img/galeria-3.webp na final -->
-            <img src="https://images.unsplash.com/photo-1628771065518-0d82f1938462?auto=format&fit=crop&w=800&q=80" alt="Konsultacja pacjenta" loading="lazy" />
+          <div class="usp-grid">
+            <article class="usp-card">
+              <h3>Bezpieczeństwo i higiena</h3>
+              <p>Pracujemy w standardzie medycznym, z dbałością o komfort i bezpieczeństwo każdej wizyty.</p>
+            </article>
+            <article class="usp-card">
+              <h3>Nowoczesne metody pracy</h3>
+              <p>Łączymy sprawdzone techniki terapii z aktualną wiedzą kliniczną i ruchem funkcjonalnym.</p>
+            </article>
+            <article class="usp-card">
+              <h3>Jasna komunikacja i plan terapii</h3>
+              <p>Każdy etap terapii jest czytelnie wyjaśniony, abyś wiedział, co robimy i dlaczego.</p>
+            </article>
           </div>
         </div>
       </section>
@@ -349,7 +299,33 @@
           </div>
         </div>
       </section>
+
     </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Przychodnia Rehabilitacyjno-Sportowa DORSALIS</h3>
+          <p>ul. Orla 8 lok. 73, 05-091 Ząbki, Polska</p>
+          <p>
+            <a href="tel:+48501659562">+48 501 659 562</a><br />
+            <a href="tel:+48501193274">+48 501 193 274</a><br />
+            <a href="mailto:kontakt@dorsalis.pl">kontakt@dorsalis.pl</a>
+          </p>
+        </div>
+        <div>
+          <h3>Szybkie linki</h3>
+          <ul>
+            <li><a href="#oferta">Oferta</a></li>
+            <li><a href="#pierwsza-wizyta">Pierwsza wizyta</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="current-year">2026</span> DORSALIS. Wszelkie prawa zastrzeżone.</p>
+      </div>
+    </footer>
 
     <div class="floating-cta" aria-label="Szybkie akcje">
       <a href="tel:+48501659562" aria-label="Zadzwoń do DORSALIS">Zadzwoń</a>

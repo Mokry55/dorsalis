@@ -1,7 +1,12 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const mainNav = document.querySelector('.main-nav');
-const navLinks = document.querySelectorAll('.main-nav a[href^="#"], .anchor-track a[href^="#"]');
-const sections = document.querySelectorAll('main section[id], main [id="kontakt"], main [id="zespol"]');
+const navLinks = document.querySelectorAll('.main-nav a[href^="#"]');
+const sections = document.querySelectorAll('main section[id], header[id]');
+const yearNode = document.querySelector('#current-year');
+
+if (yearNode) {
+  yearNode.textContent = String(new Date().getFullYear());
+}
 
 if (menuToggle && mainNav) {
   menuToggle.addEventListener('click', () => {
@@ -21,8 +26,8 @@ navLinks.forEach((link) => {
 });
 
 const setActiveLinks = (activeId) => {
-  document.querySelectorAll('.main-nav > a:not(.btn), .anchor-track a').forEach((link) => {
-    const linkId = link.getAttribute('href')?.slice(1);
+  document.querySelectorAll('.main-nav > a:not(.btn)').forEach((link) => {
+    const linkId = link.getAttribute('href')?.replace('#', '') || 'top';
     link.classList.toggle('is-active', linkId === activeId);
   });
 };
@@ -31,7 +36,7 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        setActiveLinks(entry.target.id);
+        setActiveLinks(entry.target.id || 'top');
       }
     });
   },
@@ -42,38 +47,3 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach((section) => observer.observe(section));
-
-const testimonials = Array.from(document.querySelectorAll('.testimonial'));
-const sliderButtons = document.querySelectorAll('.slider-btn');
-let currentSlide = 0;
-let autoplay;
-
-const showSlide = (index) => {
-  if (!testimonials.length) return;
-  currentSlide = (index + testimonials.length) % testimonials.length;
-  testimonials.forEach((item, i) => {
-    item.classList.toggle('active', i === currentSlide);
-  });
-};
-
-const nextSlide = () => showSlide(currentSlide + 1);
-
-sliderButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const direction = button.dataset.dir;
-    showSlide(direction === 'prev' ? currentSlide - 1 : currentSlide + 1);
-    restartAutoplay();
-  });
-});
-
-function startAutoplay() {
-  autoplay = setInterval(nextSlide, 6000);
-}
-
-function restartAutoplay() {
-  clearInterval(autoplay);
-  startAutoplay();
-}
-
-showSlide(0);
-startAutoplay();

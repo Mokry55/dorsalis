@@ -6,7 +6,7 @@
     <title>Rehabilitacja i fizjoterapia Ząbki | DORSALIS Przychodnia Rehabilitacyjna</title>
     <meta
       name="description"
-      content="DORSALIS to przychodnia rehabilitacyjna Ząbki: rehabilitacja, fizjoterapia, terapia manualna i szybka konsultacja. Zadzwoń i umów wizytę."
+      content="DORSALIS to przychodnia rehabilitacyjna Ząbki: rehabilitacja i fizjoterapia Ząbki, terapia manualna i szybka konsultacja. Zadzwoń i umów wizytę."
     />
     <!-- TODO: Podmień na docelową domenę -->
     <link rel="canonical" href="https://example.com/" />
@@ -24,10 +24,9 @@
           "addressLocality": "Ząbki",
           "addressCountry": "PL"
         },
-        "telephone": ["+48 501 659 562", "+48 501 193 274"],
+        "telephone": ["+48501659562", "+48501193274"],
         "email": "kontakt@dorsalis.pl",
-        "areaServed": ["Ząbki", "Zielonka", "Marki", "Warszawa Wschodnia"],
-        "openingHours": "Mo-Fr 08:00-20:00"
+        "areaServed": ["Ząbki", "Zielonka", "Marki", "Warszawa Wschodnia"]
       }
     </script>
   </head>
@@ -36,8 +35,11 @@
     <header class="site-header">
       <div class="container header-inner">
         <a href="/" class="logo" aria-label="DORSALIS strona główna">
-          DORSALIS
-          <small>Przychodnia Rehabilitacyjno-Sportowa</small>
+          <img src="/assets/img/logo.svg" alt="Logo DORSALIS" />
+          <span class="logo-text">
+            DORSALIS
+            <small>Przychodnia Rehabilitacyjno-Sportowa</small>
+          </span>
         </a>
         <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="menu">Menu</button>
         <nav id="menu" class="main-nav" data-main-nav>
@@ -47,6 +49,10 @@
             <li><a href="/kontakt/">Kontakt</a></li>
           </ul>
         </nav>
+        <div class="header-actions">
+          <a class="header-phone" href="tel:+48501659562">+48 501 659 562</a>
+          <a class="btn btn-secondary" href="tel:+48501659562">Zadzwoń</a>
+        </div>
       </div>
     </header>
 
@@ -54,12 +60,16 @@
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <h1>Rehabilitacja / fizjoterapia Ząbki — wróć do sprawności szybciej</h1>
+            <h1>Rehabilitacja i fizjoterapia Ząbki — wróć do sprawności szybciej</h1>
             <p>
-              Prowadzimy skuteczną terapię bólu kręgosłupa, stawów i przeciążeń po treningu. Jeśli szukasz miejsca,
-              gdzie rehabilitacja Ząbki i fizjoterapia Ząbki idą w parze z praktycznym planem leczenia, jesteś pod
-              właściwym adresem.
+              W DORSALIS łączymy rehabilitację i fizjoterapię Ząbki w konkretny plan terapii, który realnie skraca drogę
+              do lepszego ruchu i mniejszego bólu.
             </p>
+            <ul class="hero-points">
+              <li>Szybki kontakt i sprawne terminy</li>
+              <li>Doświadczeni terapeuci i indywidualne podejście</li>
+              <li>Dogodny dojazd z Ząbek i Warszawy Wschodniej</li>
+            </ul>
             <div class="cta-group">
               <a class="btn btn-primary" href="tel:+48501659562">Umów wizytę (Zadzwoń)</a>
               <a
@@ -71,22 +81,16 @@
               >
             </div>
             <div class="badges">
-              <span class="badge">Szybka konsultacja</span>
+              <span class="badge warm">Szybka konsultacja</span>
               <span class="badge">Przychodnia rehabilitacyjna Ząbki</span>
               <span class="badge">Blisko Warszawy Wschodniej</span>
             </div>
           </div>
-          <aside class="hero-card" aria-label="Najważniejsze informacje kontaktowe">
-            <h2>Kontakt w 30 sekund</h2>
-            <p><strong>Telefon główny:</strong> <a href="tel:+48501659562">+48 501 659 562</a></p>
-            <p><strong>E-mail:</strong> <a href="mailto:kontakt@dorsalis.pl">kontakt@dorsalis.pl</a></p>
-            <p><strong>Adres:</strong> ul. Orla 8 lok. 73, 05-091 Ząbki</p>
-            <a class="btn btn-primary" href="tel:+48501659562">Zadzwoń i umów wizytę</a>
-          </aside>
+          <div class="hero-media" role="img" aria-label="Przyjazna przestrzeń rehabilitacji DORSALIS"></div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section alt">
         <div class="container">
           <h2>Dlaczego pacjenci wybierają DORSALIS?</h2>
           <div class="grid cards-3">
@@ -138,7 +142,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section alt">
         <div class="container">
           <h2>Skrót oferty</h2>
           <p class="section-intro">Poznaj główne zabiegi dostępne w DORSALIS i przejdź do pełnej strony oferty.</p>
@@ -184,7 +188,7 @@
         </div>
       </section>
 
-      <section class="section" id="kontakt">
+      <section class="section alt" id="kontakt">
         <div class="container contact-layout">
           <div class="contact-card">
             <h2>Kontakt i dojazd</h2>
@@ -192,7 +196,6 @@
             <p><strong>Telefon dodatkowy:</strong> <a href="tel:+48501193274">+48 501 193 274</a></p>
             <p><strong>E-mail:</strong> <a href="mailto:kontakt@dorsalis.pl">kontakt@dorsalis.pl</a></p>
             <p><strong>Adres:</strong> ul. Orla 8 lok. 73, 05-091 Ząbki, Polska</p>
-            <p><strong>Godziny:</strong> Pon–Pt 08:00–20:00 (do potwierdzenia telefonicznie)</p>
             <div class="cta-group">
               <a class="btn btn-primary" href="tel:+48501659562">Szybka konsultacja</a>
               <a

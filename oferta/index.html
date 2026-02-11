@@ -24,10 +24,9 @@
           "addressLocality": "Ząbki",
           "addressCountry": "PL"
         },
-        "telephone": ["+48 501 659 562", "+48 501 193 274"],
+        "telephone": ["+48501659562", "+48501193274"],
         "email": "kontakt@dorsalis.pl",
-        "areaServed": ["Ząbki", "Zielonka", "Marki", "Warszawa Wschodnia"],
-        "openingHours": "Mo-Fr 08:00-20:00"
+        "areaServed": ["Ząbki", "Zielonka", "Marki", "Warszawa Wschodnia"]
       }
     </script>
   </head>
@@ -36,8 +35,11 @@
     <header class="site-header">
       <div class="container header-inner">
         <a href="/" class="logo" aria-label="DORSALIS strona główna">
-          DORSALIS
-          <small>Przychodnia Rehabilitacyjno-Sportowa</small>
+          <img src="/assets/img/logo.svg" alt="Logo DORSALIS" />
+          <span class="logo-text">
+            DORSALIS
+            <small>Przychodnia Rehabilitacyjno-Sportowa</small>
+          </span>
         </a>
         <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="menu">Menu</button>
         <nav id="menu" class="main-nav" data-main-nav>
@@ -47,10 +49,14 @@
             <li><a href="/kontakt/">Kontakt</a></li>
           </ul>
         </nav>
+        <div class="header-actions">
+          <a class="header-phone" href="tel:+48501659562">+48 501 659 562</a>
+          <a class="btn btn-secondary" href="tel:+48501659562">Zadzwoń</a>
+        </div>
       </div>
     </header>
 
-    <main id="main" class="section">
+    <main id="main" class="section alt">
       <div class="container">
         <h1>Oferta — rehabilitacja i fizjoterapia Ząbki</h1>
         <p class="section-intro">

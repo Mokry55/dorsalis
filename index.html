@@ -2,21 +2,39 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rehabilitacja i fizjoterapia Ząbki | DORSALIS Przychodnia Rehabilitacyjna</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rehabilitacja i fizjoterapia Ząbki | DORSALIS</title>
     <meta
       name="description"
-      content="DORSALIS to przychodnia rehabilitacyjna Ząbki: rehabilitacja i fizjoterapia Ząbki, terapia manualna i szybka konsultacja. Zadzwoń i umów wizytę."
+      content="Przychodnia Rehabilitacyjno-Sportowa DORSALIS w Ząbkach – rehabilitacja, fizjoterapia i terapia manualna. Umów wizytę telefonicznie i rozpocznij indywidualny plan terapii."
     />
-    <!-- TODO: Podmień na docelową domenę -->
-    <link rel="canonical" href="https://example.com/" />
+    <link rel="canonical" href="https://twoja-domena.pl/" />
+    <!-- TODO: podmienić canonical na docelowy adres URL produkcyjny -->
+
+    <meta property="og:title" content="Rehabilitacja i fizjoterapia Ząbki | DORSALIS" />
+    <meta
+      property="og:description"
+      content="Nowoczesna rehabilitacja i fizjoterapia w Ząbkach. Skuteczne terapie i indywidualny plan powrotu do sprawności."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://twoja-domena.pl/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="/assets/styles.css" />
-    <script defer src="/assets/app.js"></script>
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "MedicalBusiness",
         "name": "Przychodnia Rehabilitacyjno-Sportowa DORSALIS",
+        "telephone": ["+48501659562", "+48501193274"],
+        "email": "kontakt@dorsalis.pl",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "ul. Orla 8 lok. 73",
@@ -24,221 +42,387 @@
           "addressLocality": "Ząbki",
           "addressCountry": "PL"
         },
-        "telephone": ["+48501659562", "+48501193274"],
-        "email": "kontakt@dorsalis.pl",
-        "areaServed": ["Ząbki", "Zielonka", "Marki", "Warszawa Wschodnia"]
+        "areaServed": "Ząbki",
+        "url": "https://twoja-domena.pl/"
       }
     </script>
+    <!-- TODO: dodać openingHoursSpecification gdy potwierdzone oficjalne godziny otwarcia -->
   </head>
   <body>
-    <a class="skip-link" href="#main">Przejdź do treści</a>
-    <header class="site-header">
+    <a class="skip-link" href="#main-content">Przejdź do treści</a>
+
+    <header class="site-header" id="top">
       <div class="container header-inner">
-        <a href="/" class="logo" aria-label="DORSALIS strona główna">
-          <img src="/assets/img/logo.svg" alt="Logo DORSALIS" />
-          <span class="logo-text">
-            DORSALIS
-            <small>Przychodnia Rehabilitacyjno-Sportowa</small>
+        <a class="brand" href="#top" aria-label="DORSALIS - strona główna">
+          <span class="brand-mark">D</span>
+          <span>
+            <strong>DORSALIS</strong>
+            <small>Rehabilitacja i fizjoterapia</small>
           </span>
         </a>
-        <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="menu">Menu</button>
-        <nav id="menu" class="main-nav" data-main-nav>
-          <ul>
-            <li><a href="/" aria-current="page">Start</a></li>
-            <li><a href="/oferta/">Oferta</a></li>
-            <li><a href="/kontakt/">Kontakt</a></li>
-          </ul>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Otwórz menu">Menu</button>
+
+        <nav class="main-nav" id="main-nav" aria-label="Główna nawigacja">
+          <a href="#o-nas">O nas</a>
+          <a href="#oferta">Oferta</a>
+          <a href="#zespol">Zespół</a>
+          <a href="#opinie">Opinie</a>
+          <a href="#dojazd">Dojazd</a>
+          <a href="#kontakt">Kontakt</a>
         </nav>
-        <div class="header-actions">
-          <a class="header-phone" href="tel:+48501659562">+48 501 659 562</a>
-          <a class="btn btn-secondary" href="tel:+48501659562">Zadzwoń</a>
-        </div>
+
+        <a class="btn btn-primary" href="tel:+48501659562" aria-label="Zadzwoń pod numer 501 659 562">Zadzwoń</a>
       </div>
+
+      <nav class="anchor-bar" aria-label="Skróty sekcji">
+        <div class="container anchor-scroll">
+          <a href="#oferta">Oferta</a>
+          <a href="#specjalizacje">Specjalizacje</a>
+          <a href="#pierwsza-wizyta">Pierwsza wizyta</a>
+          <a href="#opinie">Opinie</a>
+          <a href="#dojazd">Dojazd</a>
+          <a href="#kontakt">Kontakt</a>
+        </div>
+      </nav>
     </header>
 
-    <main id="main">
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <h1>Rehabilitacja i fizjoterapia Ząbki — wróć do sprawności szybciej</h1>
-            <p>
-              W DORSALIS łączymy rehabilitację i fizjoterapię Ząbki w konkretny plan terapii, który realnie skraca drogę
-              do lepszego ruchu i mniejszego bólu.
-            </p>
-            <ul class="hero-points">
-              <li>Szybki kontakt i sprawne terminy</li>
-              <li>Doświadczeni terapeuci i indywidualne podejście</li>
-              <li>Dogodny dojazd z Ząbek i Warszawy Wschodniej</li>
-            </ul>
-            <div class="cta-group">
-              <a class="btn btn-primary" href="tel:+48501659562">Umów wizytę (Zadzwoń)</a>
-              <a
-                class="btn btn-secondary"
-                href="https://www.google.com/maps/search/?api=1&query=ul.+Orla+8+lok.+73%2C+05-091+Z%C4%85bki"
-                target="_blank"
-                rel="noopener"
-                >Jak dojechać</a
-              >
-            </div>
-            <div class="badges">
-              <span class="badge warm">Szybka konsultacja</span>
-              <span class="badge">Przychodnia rehabilitacyjna Ząbki</span>
-              <span class="badge">Blisko Warszawy Wschodniej</span>
-            </div>
-          </div>
-          <div class="hero-media" role="img" aria-label="Przyjazna przestrzeń rehabilitacji DORSALIS"></div>
+    <main id="main-content">
+      <section class="hero" id="o-nas">
+        <div class="hero-media" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1800&q=80"
+            alt=""
+          />
+          <!-- TODO: pobrać i wrzucić do /assets/img/ na final -->
+          <!-- Alternatywa lokalna: <img src="/assets/img/hero.webp" alt="" /> -->
         </div>
-      </section>
+        <div class="hero-overlay"></div>
 
-      <section class="section alt">
-        <div class="container">
-          <h2>Dlaczego pacjenci wybierają DORSALIS?</h2>
-          <div class="grid cards-3">
-            <article class="card">
-              <h3>Działamy od 1994 roku</h3>
-              <p>Łączymy wieloletnią praktykę z aktualnymi metodami fizjoterapii.</p>
-            </article>
-            <article class="card">
-              <h3>Doświadczeni terapeuci</h3>
-              <p>Każdy plan terapii dopasowujemy do Twojego trybu życia i celu leczenia.</p>
-            </article>
-            <article class="card">
-              <h3>Dogodna lokalizacja w Ząbkach</h3>
-              <p>Łatwy dojazd z Ząbek, Marek, Zielonki i okolic Warszawy Wschodniej.</p>
-            </article>
-            <article class="card">
-              <h3>Szybki kontakt</h3>
-              <p>Możesz od razu zadzwonić i ustalić pierwszy wolny termin.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <h2>W czym pomagamy?</h2>
-          <p class="section-intro">
-            Pracujemy z pacjentami, którzy chcą zmniejszyć ból i wrócić do codziennej aktywności bez obaw o kolejne
-            przeciążenia.
+        <div class="container hero-content">
+          <p class="badge">Rehabilitacja i fizjoterapia – Ząbki</p>
+          <h1>Rehabilitacja i fizjoterapia Ząbki</h1>
+          <p class="hero-lead">
+            Pomagamy wracać do sprawności po urazach, przeciążeniach i zabiegach. Stawiamy na indywidualną diagnostykę,
+            terapię i plan działania dopasowany do Twoich celów.
           </p>
-          <div class="grid cards-2">
-            <article class="card">
-              <h3>Ból kręgosłupa i karku</h3>
-              <p>Redukujemy napięcia i poprawiamy ruchomość, by łatwiej funkcjonować w pracy i w domu.</p>
-            </article>
-            <article class="card">
-              <h3>Kontuzje sportowe</h3>
-              <p>Pomagamy bezpiecznie wrócić do treningu po urazach i przeciążeniach.</p>
-            </article>
-            <article class="card">
-              <h3>Bóle stawów i ograniczenia ruchu</h3>
-              <p>Przywracamy zakres ruchu i poprawiamy komfort chodzenia, schylania oraz podnoszenia.</p>
-            </article>
-            <article class="card">
-              <h3>Rekonwalescencja po zabiegach</h3>
-              <p>Prowadzimy rehabilitację etapami, aby odzyskiwanie sprawności było przewidywalne i skuteczne.</p>
-            </article>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+48501659562">Umów wizytę (Zadzwoń)</a>
+            <a class="btn btn-ghost" href="#dojazd">Jak dojechać</a>
+          </div>
+
+          <div class="hero-tags">
+            <article class="tag-card"><strong>Od 1994</strong><span>Doświadczenie zespołu</span></article>
+            <article class="tag-card"><strong>Dogodny dojazd</strong><span>Ząbki, ul. Orla 8 lok. 73</span></article>
+            <article class="tag-card"><strong>Indywidualny plan</strong><span>Terapia szyta pod pacjenta</span></article>
           </div>
         </div>
       </section>
 
-      <section class="section alt">
+      <section class="section" id="specjalizacje">
         <div class="container">
-          <h2>Skrót oferty</h2>
-          <p class="section-intro">Poznaj główne zabiegi dostępne w DORSALIS i przejdź do pełnej strony oferty.</p>
-          <div class="grid cards-3">
-            <article class="card"><h3>Rehabilitacja</h3><p>Indywidualne plany leczenia bólu i dysfunkcji narządu ruchu.</p></article>
-            <article class="card"><h3>Fizykoterapia</h3><p>Wsparcie terapii ruchem nowoczesnymi bodźcami fizykalnymi.</p></article>
-            <article class="card"><h3>Masaż leczniczy</h3><p>Rozluźnienie tkanek i poprawa regeneracji mięśni.</p></article>
-            <article class="card"><h3>Fala uderzeniowa</h3><p>Terapia miejscowa przy przewlekłych dolegliwościach przeciążeniowych.</p></article>
-            <article class="card"><h3>Terapia manualna</h3><p>Precyzyjna praca na stawach i tkankach miękkich.</p></article>
-            <article class="card"><h3>Metoda McKenziego</h3><p>Diagnostyka i ćwiczenia dla pacjentów z bólem kręgosłupa.</p></article>
-          </div>
-          <div class="cta-group">
-            <a class="btn btn-secondary" href="/oferta/">Zobacz pełną ofertę</a>
+          <header class="section-head">
+            <p class="eyebrow">Kategorie terapii</p>
+            <h2>Dobieramy terapię do przyczyny bólu i celu pacjenta</h2>
+          </header>
+
+          <div class="tiles-grid">
+            <article class="tile">
+              <img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=900&q=80" alt="Rehabilitacja ortopedyczna" />
+              <!-- TODO: pobrać i wrzucić do /assets/img/ na final -->
+              <!-- Alternatywa lokalna: <img src="/assets/img/tile-ortopedia.webp" alt="Rehabilitacja ortopedyczna" /> -->
+              <div class="tile-overlay">
+                <h3>Rehabilitacja ortopedyczna</h3>
+                <p>Wsparcie po urazach i operacjach narządu ruchu.</p>
+                <a href="#oferta">Zobacz więcej</a>
+              </div>
+            </article>
+
+            <article class="tile">
+              <img src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?auto=format&fit=crop&w=900&q=80" alt="Rehabilitacja sportowa" />
+              <!-- TODO: pobrać i wrzucić do /assets/img/ na final -->
+              <div class="tile-overlay">
+                <h3>Rehabilitacja sportowa</h3>
+                <p>Powrót do treningu po kontuzji i przeciążeniu.</p>
+                <a href="#oferta">Zobacz więcej</a>
+              </div>
+            </article>
+
+            <article class="tile">
+              <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=900&q=80" alt="Terapia manualna" />
+              <!-- TODO: pobrać i wrzucić do /assets/img/ na final -->
+              <div class="tile-overlay">
+                <h3>Terapia manualna</h3>
+                <p>Precyzyjna praca z tkankami i stawami dla ulgi w bólu.</p>
+                <a href="#oferta">Zobacz więcej</a>
+              </div>
+            </article>
+
+            <article class="tile">
+              <img src="https://images.unsplash.com/photo-1535914254981-b5012eebbd15?auto=format&fit=crop&w=900&q=80" alt="Fizykoterapia" />
+              <!-- TODO: pobrać i wrzucić do /assets/img/ na final -->
+              <div class="tile-overlay">
+                <h3>Fizykoterapia</h3>
+                <p>Zabiegi wspierające regenerację i zmniejszenie stanu zapalnego.</p>
+                <a href="#oferta">Zobacz więcej</a>
+              </div>
+            </article>
+
+            <article class="tile">
+              <img src="https://images.unsplash.com/photo-1611077545549-2575f4e3c36d?auto=format&fit=crop&w=900&q=80" alt="Masaż leczniczy" />
+              <!-- TODO: pobrać i wrzucić do /assets/img/ na final -->
+              <div class="tile-overlay">
+                <h3>Masaż leczniczy</h3>
+                <p>Rozluźnienie napięć i poprawa komfortu ruchu.</p>
+                <a href="#oferta">Zobacz więcej</a>
+              </div>
+            </article>
+
+            <article class="tile">
+              <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=900&q=80" alt="Metoda McKenziego" />
+              <!-- TODO: pobrać i wrzucić do /assets/img/ na final -->
+              <div class="tile-overlay">
+                <h3>Metoda McKenziego</h3>
+                <p>Diagnostyka i autoterapia bólu kręgosłupa.</p>
+                <a href="#oferta">Zobacz więcej</a>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section section-soft" id="pierwsza-wizyta">
+        <div class="container highlight-grid">
+          <div>
+            <p class="eyebrow">Pierwsza wizyta i plan terapii</p>
+            <h2>Jasny proces, który prowadzi do realnych efektów</h2>
+            <ol class="steps-list">
+              <li><strong>Wywiad i diagnostyka funkcjonalna</strong> – określamy źródło problemu i cele terapii.</li>
+              <li><strong>Terapia właściwa</strong> – dobieramy techniki manualne i ćwiczenia do aktualnego stanu.</li>
+              <li><strong>Plan ćwiczeń i zalecenia</strong> – otrzymujesz konkretne wskazówki do domu.</li>
+            </ol>
+            <ul class="benefits-list">
+              <li>Spójny plan działania od pierwszego spotkania</li>
+              <li>Regularna ocena postępów</li>
+              <li>Nastawienie na trwałe efekty i profilaktykę</li>
+            </ul>
+            <a class="btn btn-primary" href="tel:+48501659562">Zadzwoń i umów wizytę</a>
+          </div>
+
+          <figure class="highlight-image">
+            <img src="https://images.unsplash.com/photo-1604480133080-602261a680df?auto=format&fit=crop&w=1100&q=80" alt="Fizjoterapeuta podczas pracy z pacjentem" />
+            <!-- TODO: pobrać i wrzucić do /assets/img/ na final -->
+            <!-- Alternatywa lokalna: <img src="/assets/img/highlight-first-visit.webp" alt="Fizjoterapeuta podczas pracy z pacjentem" /> -->
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="oferta">
         <div class="container">
-          <h2>FAQ — rehabilitacja i fizjoterapia Ząbki</h2>
-          <div class="faq">
-            <details>
-              <summary>Czy przyjmujecie pacjentów z Ząbek i okolic?</summary>
-              <p>Tak. Obsługujemy pacjentów z Ząbek, Zielonki, Marek i Warszawy Wschodniej.</p>
-            </details>
-            <details>
-              <summary>Jak szybko mogę umówić pierwszą wizytę?</summary>
-              <p>Najkrótszą drogą jest telefon. Podczas rozmowy proponujemy najbliższe dostępne terminy.</p>
-            </details>
-            <details>
-              <summary>Czy muszę mieć skierowanie na fizjoterapię?</summary>
-              <p>W wielu przypadkach nie. Jeśli masz dokumentację medyczną, warto zabrać ją na pierwszą wizytę.</p>
-            </details>
-            <details>
-              <summary>Ile trwa pojedyncza terapia?</summary>
-              <p>Czas zależy od problemu i rodzaju zabiegu; zwykle od 30 do 60 minut.</p>
-            </details>
-            <details>
-              <summary>Czy prowadzicie terapię dla osób aktywnych sportowo?</summary>
-              <p>Tak, pomagamy zarówno amatorom, jak i osobom trenującym regularnie.</p>
-            </details>
+          <header class="section-head">
+            <p class="eyebrow">Oferta</p>
+            <h2>Usługi dopasowane do Twojej aktywności i dolegliwości</h2>
+          </header>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18" /></svg>
+              </span>
+              <h3>Konsultacja fizjoterapeutyczna</h3>
+              <p>Pierwsza ocena funkcjonalna i plan terapii nastawiony na konkretny cel.</p>
+            </article>
+            <article class="service-card">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 12c3-6 13-6 16 0-3 6-13 6-16 0Z" /><circle cx="12" cy="12" r="2.5" /></svg>
+              </span>
+              <h3>Terapia manualna</h3>
+              <p>Praca na tkankach miękkich i stawach, aby zmniejszyć ból i poprawić ruchomość.</p>
+            </article>
+            <article class="service-card">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 21c-5-4-8-7-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4-3 7-8 11Z" /></svg>
+              </span>
+              <h3>Rehabilitacja pooperacyjna</h3>
+              <p>Bezpieczne etapy powrotu do aktywności po zabiegach ortopedycznych.</p>
+            </article>
+            <article class="service-card">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="m4 14 4-4 3 3 6-6 3 3" /><path d="M4 20h16" /></svg>
+              </span>
+              <h3>Rehabilitacja sportowa</h3>
+              <p>Powrót do treningu i prewencja przeciążeń dla osób aktywnych.</p>
+            </article>
+            <article class="service-card">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M5 5h14v14H5z" /><path d="M9 9h6v6H9z" /></svg>
+              </span>
+              <h3>Fizykoterapia</h3>
+              <p>Zabiegi wspierające regenerację i redukcję dolegliwości bólowych.</p>
+            </article>
+            <article class="service-card">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M3 12h18" /><path d="M12 3c4 3 4 15 0 18" /></svg>
+              </span>
+              <h3>Kinezyterapia</h3>
+              <p>Ćwiczenia lecznicze poprawiające siłę, stabilizację i kontrolę ruchu.</p>
+            </article>
+            <article class="service-card">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M7 16c0-4 10-4 10 0" /><circle cx="12" cy="8" r="3" /></svg>
+              </span>
+              <h3>Masaż leczniczy</h3>
+              <p>Zmniejszenie napięć mięśniowych i poprawa ukrwienia tkanek.</p>
+            </article>
+            <article class="service-card">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M6 6h12v12H6z" /><path d="M6 12h12" /></svg>
+              </span>
+              <h3>Metoda McKenziego</h3>
+              <p>Postępowanie diagnostyczno-terapeutyczne przy bólach kręgosłupa.</p>
+            </article>
+          </div>
+
+          <aside class="cta-band" aria-label="Wezwanie do działania">
+            <h3>Nie odkładaj powrotu do sprawności</h3>
+            <p>Zadzwoń i umów pierwszą wizytę w dogodnym terminie.</p>
+            <a class="btn btn-primary" href="tel:+48501659562">Umów wizytę telefonicznie</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="opinie">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Opinie</p>
+            <h2>Przykładowe opinie (demo)</h2>
+          </header>
+
+          <div class="reviews-carousel" aria-live="polite">
+            <button class="carousel-btn prev" type="button" aria-label="Poprzednia opinia">‹</button>
+
+            <div class="review-track">
+              <article class="review active">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=250&q=80" alt="Pacjentka demo" />
+                <!-- TODO: pobrać i wrzucić do /assets/img/ na final -->
+                <p>„Profesjonalne podejście i jasny plan terapii. Po kilku spotkaniach wróciłam do codziennej aktywności bez bólu.”</p>
+                <strong>Pacjentka (demo)</strong>
+              </article>
+
+              <article class="review">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=250&q=80" alt="Pacjent demo" />
+                <!-- TODO: pobrać i wrzucić do /assets/img/ na final -->
+                <p>„Świetna komunikacja i terapia dopasowana do mojego trybu pracy. Czułem postęp po każdej wizycie.”</p>
+                <strong>Pacjent (demo)</strong>
+              </article>
+
+              <article class="review">
+                <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=250&q=80" alt="Pacjentka demo" />
+                <!-- TODO: pobrać i wrzucić do /assets/img/ na final -->
+                <p>„Duży plus za konkretne ćwiczenia do domu i kontrolę efektów. Czuję, że jestem pod dobrą opieką.”</p>
+                <strong>Pacjentka (demo)</strong>
+              </article>
+            </div>
+
+            <button class="carousel-btn next" type="button" aria-label="Następna opinia">›</button>
           </div>
         </div>
       </section>
 
-      <section class="section alt" id="kontakt">
-        <div class="container contact-layout">
-          <div class="contact-card">
-            <h2>Kontakt i dojazd</h2>
-            <p><strong>Telefon główny:</strong> <a href="tel:+48501659562">+48 501 659 562</a></p>
-            <p><strong>Telefon dodatkowy:</strong> <a href="tel:+48501193274">+48 501 193 274</a></p>
-            <p><strong>E-mail:</strong> <a href="mailto:kontakt@dorsalis.pl">kontakt@dorsalis.pl</a></p>
-            <p><strong>Adres:</strong> ul. Orla 8 lok. 73, 05-091 Ząbki, Polska</p>
-            <div class="cta-group">
-              <a class="btn btn-primary" href="tel:+48501659562">Szybka konsultacja</a>
-              <a
-                class="btn btn-secondary"
-                href="https://www.google.com/maps/search/?api=1&query=ul.+Orla+8+lok.+73%2C+05-091+Z%C4%85bki"
-                target="_blank"
-                rel="noopener"
-                >Sprawdź dojazd</a
-              >
+      <section class="section" id="zespol">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Zespół</p>
+            <h2>Doświadczeni fizjoterapeuci i rehabilitanci</h2>
+          </header>
+
+          <div class="team-grid">
+            <article class="team-card">
+              <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&q=80" alt="Fizjoterapeutka - portret" />
+              <!-- TODO: pobrać i wrzucić do /assets/img/ na final -->
+              <h3>Anna Kowalska (demo)</h3>
+              <p>Fizjoterapia ortopedyczna i terapia manualna.</p>
+            </article>
+            <article class="team-card">
+              <img src="https://images.unsplash.com/photo-1614608682850-e0d6ed316d47?auto=format&fit=crop&w=500&q=80" alt="Fizjoterapeuta - portret" />
+              <!-- TODO: pobrać i wrzucić do /assets/img/ na final -->
+              <h3>Michał Nowak (demo)</h3>
+              <p>Rehabilitacja sportowa i przygotowanie motoryczne.</p>
+            </article>
+            <article class="team-card">
+              <img src="https://images.unsplash.com/photo-1594824475317-8f3f4ec86163?auto=format&fit=crop&w=500&q=80" alt="Rehabilitantka - portret" />
+              <!-- TODO: pobrać i wrzucić do /assets/img/ na final -->
+              <h3>Katarzyna Wiśniewska (demo)</h3>
+              <p>Fizykoterapia, kinezyterapia i edukacja pacjenta.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="o-klinice">
+        <div class="container clinic-grid">
+          <div>
+            <p class="eyebrow">O klinice / gabinet</p>
+            <h2>Miejsce stworzone dla komfortu terapii</h2>
+            <p>
+              Przychodnia Rehabilitacyjno-Sportowa DORSALIS to przestrzeń, w której łączymy doświadczenie,
+              nowoczesne metody pracy i empatyczne podejście do pacjenta. Stawiamy na skuteczność, bezpieczeństwo
+              i jasną komunikację na każdym etapie terapii.
+            </p>
+            <a class="btn btn-secondary" href="#kontakt">Skontaktuj się z nami</a>
+          </div>
+
+          <div class="gallery-grid" aria-label="Galeria gabinetu">
+            <img src="https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?auto=format&fit=crop&w=700&q=80" alt="Wnętrze gabinetu rehabilitacji" />
+            <!-- TODO: pobrać i wrzucić do /assets/img/ na final -->
+            <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=700&q=80" alt="Sala ćwiczeń w klinice" />
+            <!-- TODO: pobrać i wrzucić do /assets/img/ na final -->
+            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=700&q=80" alt="Strefa konsultacji fizjoterapeutycznej" />
+            <!-- TODO: pobrać i wrzucić do /assets/img/ na final -->
+            <!-- Alternatywa lokalna: /assets/img/clinic-1.webp, /assets/img/clinic-2.webp, /assets/img/clinic-3.webp -->
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="dojazd">
+        <div class="container contact-grid" id="kontakt">
+          <div>
+            <p class="eyebrow">Dojazd i kontakt</p>
+            <h2>Jesteśmy w Ząbkach – zapraszamy do kontaktu</h2>
+            <ul class="contact-list">
+              <li><strong>Nazwa:</strong> Przychodnia Rehabilitacyjno-Sportowa DORSALIS</li>
+              <li><strong>Adres:</strong> ul. Orla 8 lok. 73, 05-091 Ząbki, Polska</li>
+              <li><strong>Telefon:</strong> <a href="tel:+48501659562">+48 501 659 562</a>, <a href="tel:+48501193274">+48 501 193 274</a></li>
+              <li><strong>Email:</strong> <a href="mailto:kontakt@dorsalis.pl">kontakt@dorsalis.pl</a></li>
+            </ul>
+
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="tel:+48501659562">Zadzwoń</a>
+              <a class="btn btn-secondary" href="https://www.google.com/maps/dir/?api=1&destination=ul.+Orla+8+lok.+73,+05-091+Z%C4%85bki" target="_blank" rel="noopener noreferrer">Trasa</a>
             </div>
           </div>
-          <iframe
-            class="map-embed"
-            title="Mapa dojazdu do DORSALIS"
-            loading="lazy"
-            allowfullscreen
-            src="https://www.google.com/maps?q=ul.+Orla+8+lok.+73,+05-091+Z%C4%85bki&output=embed"
-          ></iframe>
+
+          <div class="map-wrap" aria-label="Mapa dojazdu do DORSALIS">
+            <iframe
+              title="Mapa dojazdu - DORSALIS Ząbki"
+              src="https://www.google.com/maps?q=ul.+Orla+8+lok.+73,+05-091+Z%C4%85bki&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <p>
-          <strong>Przychodnia Rehabilitacyjno-Sportowa DORSALIS</strong><br />
-          ul. Orla 8 lok. 73, 05-091 Ząbki, Polska • tel. <a href="tel:+48501659562">+48 501 659 562</a>
-        </p>
-        <p><a href="/kontakt/">Kontakt</a> • <a href="/oferta/">Oferta</a></p>
-      </div>
-    </footer>
-
-    <div class="sticky-cta" aria-label="Szybki kontakt mobilny">
-      <div class="container">
-        <a class="btn btn-primary" href="tel:+48501659562">Zadzwoń</a>
-        <a
-          class="btn btn-secondary"
-          href="https://www.google.com/maps/search/?api=1&query=ul.+Orla+8+lok.+73%2C+05-091+Z%C4%85bki"
-          target="_blank"
-          rel="noopener"
-          >Trasa</a
-        >
-      </div>
+    <div class="floating-actions" aria-label="Szybkie akcje">
+      <a href="tel:+48501659562" class="float-btn">Zadzwoń</a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=ul.+Orla+8+lok.+73,+05-091+Z%C4%85bki" target="_blank" rel="noopener noreferrer" class="float-btn secondary">Trasa</a>
     </div>
+
+    <div class="mobile-sticky-cta">
+      <a href="tel:+48501659562">Umów wizytę: +48 501 659 562</a>
+    </div>
+
+    <script defer src="/assets/app.js"></script>
   </body>
 </html>
